@@ -55,7 +55,7 @@ if (contactForm) {
         try {
 
             const response = await fetch(
-                "http://127.0.0.1:8000/contact",
+                "https://vionario-api.onrender.com/contact",
                 {
                     method: "POST",
                     headers: {
