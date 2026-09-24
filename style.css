@@ -84,6 +84,14 @@ body {
   border-color: rgba(255, 255, 255, 0.7);
 }
 
+.hero-logo {
+    display: block;
+    width: clamp(140px, 18vw, 240px);
+    height: auto;
+
+    margin: 0 auto 30px;
+}
+
 .scroll-indicator {
   position: absolute;
   bottom: 28px;
@@ -150,12 +158,15 @@ body {
 }
 
 .nav-logo {
-  color: #0b1f3a;
-  text-decoration: none;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
 
-  font-size: 1.15rem;
-  font-weight: 800;
-  letter-spacing: 0.08em;
+.nav-logo img {
+    display: block;
+    height: 42px;
+    width: auto;
 }
 
 .nav-links {
@@ -927,6 +938,17 @@ body {
     font-size: 0.9rem;
 }
 
+.footer-logo {
+    display: inline-flex;
+    align-items: center;
+}
+
+.footer-logo img {
+    display: block;
+    height: 48px;
+    width: auto;
+}
+
 /* =========================
    RESPONSIVE
 ========================= */
@@ -1008,6 +1030,7 @@ body {
     gap: 45px;
 }
 }
+
 /* 600 px */
 @media (max-width: 600px) {
   .nav-container {
@@ -1071,4 +1094,9 @@ body {
 .contact-form {
     padding: 24px;
 }
+
+.nav-logo img {
+    height: 36px;
+}
+
 }

@@ -39,3 +39,12 @@ if (contactForm) {
     formStatus.textContent = "Form received. Backend connection coming next.";
   });
 }
+
+// Nav hamburger collapse after click
+const mobileNavLinks = document.querySelectorAll("#navLinks a");
+
+mobileNavLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+        navLinks.classList.remove("open");
+    });
+});
